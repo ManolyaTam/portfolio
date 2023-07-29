@@ -1,6 +1,50 @@
-html {
-    --primary-color: #682EE4;
-    --secondary-color: #8B62E3;
-    --border-raduis: 10px;
+:root {
+  --primary-color: #682ee4;
+  --secondary-color: #8b62e3;
+  --border-raduis: 10px;
+}
 
+body {
+  margin: 0;
+  height: 200vh;
+}
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  border-bottom: 1px solid var(--secondary-color);
+  background-color: white;
+  box-shadow: 0 0 1px var(--secondary-color);
+
+  position: sticky;
+  top: 0;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 10px;
+}
+
+#nav li a,
+#nav li a:visited {
+  padding: 10px;
+  margin: 7px;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: var(--border-raduis);
+  text-decoration: none;
+}
+#nav li a:active {
+  background-color: var(--secondary-color);
+}
+
+#logo {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: 15px
 }
