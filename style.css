@@ -90,6 +90,7 @@ section:not(#top) {
 }
 
 .skill {
+  border: 1px solid transparent;
   padding: 10px;
   text-align: center;
   word-wrap: normal;
@@ -100,9 +101,24 @@ section:not(#top) {
   align-items: center;
 }
 
+.skill:hover {
+  transition: 0.3s ease-in-out;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-raduis);
+}
+.skill:hover {
+  display: block;
+}
 .skill:hover::before {
+  display: block;
   content: attr(data-content);
+  font-size: 20px;
+  font-weight: bold;
+
   text-align: center;
+  position: relative;
+  text-align: center;
+  top: 40%;
 }
 
 .skill:hover {
@@ -128,23 +144,16 @@ th {
 
 #technical-skills {
   display: flex;
-
   width: 1000px;
   position: relative;
   margin: 10px auto 0;
   overflow-x: scroll;
+  scroll-snap-align: start;
 }
 
 #skills-board {
   display: grid;
   grid-template-rows: auto auto;
-}
-
-#slider-nav {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
 }
 
 .skill-page {
@@ -160,4 +169,5 @@ th {
   padding: 10px;
   border-radius: var(--border-raduis);
   text-align: center;
+  margin: 10px;
 }
