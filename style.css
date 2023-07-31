@@ -170,9 +170,10 @@ th {
 }
 
 .skills-toggle {
+  background-color: white;
   display: inline-block;
-  width: 20px;
-  height: 10px;
+  width: 25px;
+  height:7px;
   border:1px solid black;
   text-decoration: none;
   border-radius: var(--border-raduis);
@@ -187,5 +188,14 @@ th {
 
 .slider-nav {
   margin: 0 auto;
+  border: 1px solid transparent;
+  border-radius: var(--border-raduis);
+  padding:10px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 150px;
+  margin-bottom: 20px
+
 }
 
