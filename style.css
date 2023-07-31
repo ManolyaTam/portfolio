@@ -90,14 +90,14 @@ section:not(#top) {
 }
 
 .skill {
-  border: 1px solid var(--primary-color);
   padding: 10px;
-  border-radius: var(--border-raduis);
   text-align: center;
   word-wrap: normal;
   white-space: nowrap;
   width: 110px;
   height: 110px;
+  display: flex;
+  align-items: center;
 }
 
 .skill:hover::before {
@@ -127,17 +127,37 @@ th {
 }
 
 #technical-skills {
-  margin: 10px;
-  width: min-content;
-  height: min-content;
-  display: grid;
-  grid-auto-flow: column;
-  gap: 10px;
+  display: flex;
+
+  width: 1000px;
+  position: relative;
+  margin: 10px auto 0;
   overflow-x: scroll;
-  width: 100%;
 }
 
 #skills-board {
   display: grid;
   grid-template-rows: auto auto;
+}
+
+#slider-nav {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.skill-page {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+#skill-page1,
+#skill-page2,
+#skill-page3,
+#skill-page4 {
+  border: 1px solid var(--primary-color);
+  padding: 10px;
+  border-radius: var(--border-raduis);
+  text-align: center;
 }
