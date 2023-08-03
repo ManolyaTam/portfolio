@@ -123,6 +123,7 @@ section:not(#top) {
   height: 110px;
   display: flex;
   align-items: center;
+  border-radius: var(--border-raduis);
 }
 
 .skill:hover {
