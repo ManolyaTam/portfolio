@@ -19,3 +19,31 @@
     width: 700px;
   }
 }
+
+@media (max-width: 800px) {
+  #nav {
+    display: none;
+  }
+
+  header {
+    height: 70px;
+  }
+
+  #desktop-img {
+    display: none;
+  }
+
+  .mode-label {
+    padding: 20px;
+  }
+
+  .skill-page{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  
+  #projects-board {
+  display: flex;
+  width: 250px;
+  }
+}

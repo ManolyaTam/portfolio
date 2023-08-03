@@ -1,6 +1,5 @@
 :root {
   --primary-color: #6c65d9;
-  /* --secondary-color: #8b62e3; */
   --border-raduis: 8px;
   --background-color: #fff;
   --font-color: black;
@@ -115,13 +114,16 @@ section:not(#top) {
 
 .skill {
   border: 1px solid transparent;
-  padding: 10px;
+  padding: 5px;
+  transition: 0.4s ease-in-out;
+  margin: 5px;
   text-align: center;
   word-wrap: normal;
   width: 110px;
   height: 110px;
   display: flex;
   align-items: center;
+  border-radius: var(--border-raduis);
 }
 
 .skill:hover {
