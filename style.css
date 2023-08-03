@@ -201,3 +201,35 @@ th {
 
 }
 
+.proj {
+  border: 1px solid black;
+  position: relative;
+  width: 350px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proj-content {
+position: absolute;
+top:0;
+left: 40px;
+display: none;
+}
+
+.proj:hover .proj-img {
+  opacity: 15%;
+}
+
+.proj:hover .proj-content {
+  display: block;
+  background-color: white;
+}
+
+.repo-link {
+  color: white;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  padding: 5px;
+}
