@@ -114,7 +114,9 @@ section:not(#top) {
 
 .skill {
   border: 1px solid transparent;
-  padding: 10px;
+  padding: 5px;
+  transition: 0.4s ease-in-out;
+  margin: 5px;
   text-align: center;
   word-wrap: normal;
   width: 110px;
