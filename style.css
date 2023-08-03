@@ -1,17 +1,17 @@
 :root {
   --primary-color: #6c65d9;
   /* --secondary-color: #8b62e3; */
-  --border-raduis: 10px;
+  --border-raduis: 8px;
   --background-color: #fff;
-  --font-color:black;
-  color: var(--font-color)
+  --font-color: black;
+  color: var(--font-color);
 }
 
 body:has(#darkmode:checked) {
   /* dark mode */
   --background-color: #212129;
-  --font-color:white;
-  color: var(--font-color)
+  --font-color: white;
+  color: var(--font-color);
 }
 
 body {
@@ -127,7 +127,7 @@ section:not(#top) {
 }
 
 .skill:hover {
-  background-color:white;
+  background-color: white;
   color: black;
 }
 
@@ -176,8 +176,8 @@ th {
   background-color: white;
   display: inline-block;
   width: 25px;
-  height:7px;
-  border:1px solid black;
+  height: 7px;
+  border: 1px solid black;
   text-decoration: none;
   border-radius: var(--border-raduis);
 }
@@ -193,30 +193,37 @@ th {
   margin: 0 auto;
   border: 1px solid transparent;
   border-radius: var(--border-raduis);
-  padding:10px 2px;
+  padding: 10px 2px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 150px;
-  margin-bottom: 20px
-
+  margin-bottom: 20px;
 }
 
 .proj {
-  border: 1px solid black;
   position: relative;
-  width: 350px;
-  height: 250px;
+  width: 250px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-raduis);
+}
+
+.proj:hover {
+  box-shadow: 1px 1px 10px 1px var(--primary-color);
+  transition: 0.1s ease-in-out;
 }
 
 .proj-content {
-position: absolute;
-top:0;
-left: 40px;
-display: none;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  display: none;
 }
 
 .proj:hover .proj-img {
@@ -225,7 +232,7 @@ display: none;
 
 .proj:hover .proj-content {
   display: block;
-  background-color: white;
+  margin: auto auto;
 }
 
 .repo-link {
@@ -233,4 +240,15 @@ display: none;
   background-color: var(--primary-color);
   text-decoration: none;
   padding: 5px;
+  border-radius: var(--border-raduis);
+}
+
+#projects-board {
+  display: flex;
+  margin: 0 350px;
+  flex-wrap: wrap;
+}
+
+.inline-link {
+  color: var(--primary-color)
 }
