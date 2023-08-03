@@ -309,7 +309,7 @@ label {
   position: relative;
 }
 
-section {
+section:not(#top) {
   display: flex;
   align-items: center;
   justify-content: ceneter;
@@ -334,13 +334,6 @@ input,
 textarea {
   border-radius: 3px;
   border: 1px solid lightgrey;
-}
-
-.primary-button {
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: flex-end;   */
-  /* width: 100%; */
 }
 
 #contact-form button {
