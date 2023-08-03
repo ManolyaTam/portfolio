@@ -93,6 +93,20 @@ section:not(#top) {
   text-transform: uppercase;
   font-weight: normal;
   color: var(--primary-color);
+  padding: 3px 10px;
+  border-inline: 1px solid var(--primary-color);
+}
+
+.subheader::before {
+  content: "";
+  padding: 0 10px;
+  border-left: 2px solid var(--primary-color);
+}
+
+.subheader::after {
+  content: "";
+  padding: 0 10px;
+  border-right: 2px solid var(--primary-color);
 }
 
 .skill {
@@ -245,8 +259,9 @@ th {
 
 #projects-board {
   display: flex;
-  margin: 0 350px;
+  margin: 0 auto;
   flex-wrap: wrap;
+  width: 1000px;
 }
 
 .inline-link {
@@ -269,27 +284,70 @@ textarea {
 }
 
 textarea + label {
-  left: -305px;
-  top: -150px;
+  left: 5px;
+  top: -170px;
 }
 
-input:focus + label {
+input:focus + label,
+input:not(:placeholder-shown) + label {
   top: -15px;
   background-color: white;
 }
 
-textarea:focus + label {
-  left: -305px;
-  top: -165px;
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+  top: -185px;
   background-color: white;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
-
 }
 
 label {
   position: relative;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: ceneter;
+  flex-direction: column;
+}
+
+#contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px dashed var(--primary-color);
+  border-radius: var(--border-raduis);
+}
+
+.input-field {
+  width: 90%;
+}
+
+input,
+textarea {
+  border-radius: 3px;
+  border: 1px solid lightgrey;
+}
+
+.primary-button {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: flex-end;   */
+  /* width: 100%; */
+}
+
+#contact-form button {
+  width: 80%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 4px 2px;
+  border: transparent;
+  border-radius: 3px;
 }
