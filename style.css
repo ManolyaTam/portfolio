@@ -4,7 +4,10 @@
   --border-raduis: 8px;
   --background-color: #fff;
   --font-color: black;
+  --label-color: black;
+  --label-background-color: white;
   color: var(--font-color);
+  font-weight: normal;
 }
 
 body:has(#darkmode:checked) {
@@ -12,6 +15,7 @@ body:has(#darkmode:checked) {
   --background-color: #212129;
   --font-color: white;
   color: var(--font-color);
+  font-weight: bolder;
 }
 
 body {
@@ -317,6 +321,8 @@ section:not(#top) {
 }
 
 #contact-form {
+  background-color: white;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,4 +349,25 @@ textarea {
   padding: 4px 2px;
   border: transparent;
   border-radius: 3px;
+}
+
+#darkmode {
+  display: none;
+}
+
+.mode-label {
+  display: none;
+}
+
+#darkmode:checked ~ #dark-label {
+  display: block;
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#darkmode:not(:checked) ~ #light-label {
+  text-decoration: underline;
+  display: block;
+  color: white;
 }
