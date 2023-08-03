@@ -1,0 +1,21 @@
+@media (max-width: 1400px) {
+  section#top {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  #technical-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .slider-nav {
+    display: none;
+  }
+
+  #projects-board {
+    width: 700px;
+  }
+}

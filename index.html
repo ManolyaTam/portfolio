@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manolya's portfolio</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
   </head>
   <body>
     <header>
-      <span id="logo">logo here</span>
+      <span id="logo"><b>@ManolyaTam</b></span>
       <ul id="nav" role="navigation">
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact me</a></li>
       </ul>
-      <input type="checkbox" id="darkmode" />
+      <input  type="checkbox" id="darkmode"/><br/>
+      <label id="light-label" class="mode-label" for="darkmode">Light Mode</label>
+      <label id="dark-label" class="mode-label" for="darkmode">Dark Mode</label>
     </header>
     <main>
       <section id="top">
@@ -338,7 +341,7 @@
               >
             </div>
           </div>
-          <div class="proj" style="background-color: white;; color:black">
+          <div class="proj" style="background-color: white; color: black">
             <img
               class="proj-img"
               src="img/projects/time-wise.png"
@@ -352,9 +355,8 @@
                 <small>04/2023 - 07-2023</small>
               </h4>
               <p class="proj-desc">
-                Final Team Project in the PSEU
-                Training, aims to track your time at work. Inspired
-                by
+                Final Team Project in the PSEU Training, aims to track your time
+                at work. Inspired by
                 <a
                   class="inline-link"
                   target="b"
@@ -378,6 +380,27 @@
             </div>
           </div>
         </div>
+      </section>
+      <section id="contact" style="position: relative">
+        <h2 class="subheader">Contact Me</h2>
+        <form action="#contact" id="contact-form">
+          <div class="input-field">
+            <input id="fullname" placeholder=" ">
+            <label for="fullname">Full Name</label>
+          </div>
+          <div class="input-field">
+            <input type="email" id="email" placeholder=" "/>
+            <label for="email">Email</label>
+          </div>
+
+          <div class="input-field">
+            <textarea placeholder=" " id="message"></textarea>
+            <label for="message">Message</label>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </section>
     </main>
     <footer>footer</footer>
