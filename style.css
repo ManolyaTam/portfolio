@@ -10,7 +10,7 @@
   font-weight: normal;
 }
 
-body:has(#darkmode:checked) {
+  body:has(#darkmode:checked) {
   /* dark mode */
   --background-color: #212129;
   --font-color: white;
@@ -321,8 +321,9 @@ section:not(#top) {
 }
 
 #contact-form {
-  background-color: white;
+  background-color: #fefefe;
   color: black;
+  font-weight: normal;
   display: flex;
   align-items: center;
   justify-content: center;
