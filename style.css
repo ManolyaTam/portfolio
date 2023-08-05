@@ -68,6 +68,13 @@ header {
   margin: -100px 50px 0 0;
 }
 
+#experience li {
+  list-style: none;
+  border-left: 2px solid var(--primary-color);
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
 section:not(#top) {
   padding-top: 40px;
   margin: 0 50px;
@@ -97,6 +104,7 @@ section:not(#top) {
   color: var(--primary-color);
   padding: 3px 10px;
   border-inline: 1px solid var(--primary-color);
+  font-weight: bold;
 }
 
 .subheader::before {
