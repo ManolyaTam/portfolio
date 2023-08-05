@@ -14,7 +14,17 @@
   </head>
   <body>
     <header>
-      <span id="logo"><b>@ManolyaTam</b></span>
+      <label for="menu-trigger" id="menu-icon" style="margin-left: 20px;" ><i class="fa fa-bars"></i></label>
+      <input id="menu-trigger" readonly style="position: absolute; background: transparent; border: none;"/>
+      <div id="menu" style="display: none;" role="navigation">
+        <ul>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact me</a></li>
+      </ul>  
+      </div>
+      <span id="logo"><b>ManolyaTam</b></span>
       <ul id="nav" role="navigation">
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -22,10 +32,9 @@
         <li><a href="#contact">Contact me</a></li>
       </ul>
       <input type="checkbox" id="darkmode" /><br />
-      <label id="light-label" class="mode-label" for="darkmode"
-        >Light Mode</label
-      >
+      <label id="light-label" class="mode-label" for="darkmode">Light Mode</label>
       <label id="dark-label" class="mode-label" for="darkmode">Dark Mode</label>
+      
     </header>
     <main>
       <section id="top">
@@ -317,7 +326,7 @@
               >
             </div>
           </div>
-          <div class="proj" style="background-color: white">
+          <div class="proj" style="background-color: white; color: black">
             <img
               class="proj-img"
               src="img/projects/frying-nemo.png"

@@ -9,7 +9,7 @@
   font-weight: normal;
 }
 
-  body:has(#darkmode:checked) {
+body:has(#darkmode:checked) {
   /* dark mode */
   --background-color: #212129;
   --font-color: white;
@@ -29,7 +29,7 @@ header {
   justify-content: flex-end;
 
   border-bottom: 1px solid var(--background-color);
-
+  box-sizing: border-box;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -372,11 +372,9 @@ textarea {
   color: black;
   background-color: transparent;
   text-decoration: underline;
-  margin-right: 20px;
 }
 
 #darkmode:not(:checked) ~ #light-label {
-  margin-right: 20px;
   text-decoration: underline;
   display: block;
   color: white;
@@ -385,8 +383,52 @@ textarea {
 footer {
   background-color: var(--primary-color);
   color: white;
-  margin-top: 150px; 
+  margin-top: 150px;
   display: grid;
   grid-template-columns: auto auto;
   padding: 20px;
+}
+
+#menu-icon {
+  display: none;
+  color: white;
+}
+
+#menu {
+  position: absolute;
+  background-color: var(--background-color);
+  border-bottom-right-radius: var(--border-raduis);
+  top: 50px;
+  left: 0;
+  font-size: 20px;
+  width: 200px;
+  border: 1px solid var(--primary-color);
+}
+
+#menu ul {
+  padding: 0;
+  list-style: none;
+}
+
+#menu li {
+  width: 80%;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-raduis);
+  color: var(--primary-color)
+}
+
+#menu li:hover{
+  color: white;
+  background-color: var(--primary-color);
+}
+
+#menu li:hover a{
+  color: white;
+}
+
+#menu a {
+  text-decoration: none;
+  color: var(--primary-color)
 }
