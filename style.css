@@ -146,11 +146,6 @@ section:not(#top) {
   top: 40%;
 }
 
-.skill:hover {
-  background-color: white;
-  color: black;
-}
-
 .skill:hover img {
   display: none;
 }
@@ -206,7 +201,11 @@ th {
   transition: 0.5s ease-in-out;
 }
 .skills-toggle:focus {
-  background-color: black;
+  background-color: green;
+}
+
+a:focus {
+  background-color: red;
 }
 
 .slider-nav {
