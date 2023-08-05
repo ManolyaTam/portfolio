@@ -75,7 +75,7 @@ header {
   padding: 0 10px;
 }
 
-section:not(#top) {
+section:not(#top):not(#contact) {
   padding-top: 40px;
   margin: 0 50px;
   border-bottom: 1px solid var(--primary-color);
@@ -209,10 +209,6 @@ th {
 }
 .skills-toggle:focus {
   background-color: green;
-}
-
-a:focus {
-  background-color: red;
 }
 
 .slider-nav {
@@ -383,4 +379,13 @@ textarea {
   text-decoration: underline;
   display: block;
   color: white;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 150px; 
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
 }

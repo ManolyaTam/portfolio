@@ -48,4 +48,8 @@
   display: flex;
   width: 250px;
   }
+
+  footer {
+    grid-template-columns: auto;
+  }
 }
