@@ -364,6 +364,7 @@ textarea {
 
 .mode-label {
   display: none;
+  cursor: pointer;
 }
 
 #darkmode:checked ~ #dark-label {
