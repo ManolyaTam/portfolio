@@ -450,17 +450,14 @@ footer {
 }
 
 #gallery {
-  max-width: 850px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 0;
 }
 
-#galery img {
-  font-stretch: 10px;
+img.photo {
+  width: 100%;
+  object-fit: contain; /* or "contain" */
+  border-radius: var(--border-raduis);
 }
