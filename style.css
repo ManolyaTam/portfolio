@@ -1,4 +1,5 @@
 :root {
+  scroll-behavior: smooth;
   --primary-color: #6c65d9;
   --border-raduis: 8px;
   --background-color: #fff;
@@ -9,12 +10,11 @@
   font-weight: normal;
 }
 
-  body:has(#darkmode:checked) {
+body:has(#darkmode:checked) {
   /* dark mode */
   --background-color: #212129;
   --font-color: white;
   color: var(--font-color);
-  font-weight: bolder;
 }
 
 body {
@@ -30,7 +30,7 @@ header {
   justify-content: flex-end;
 
   border-bottom: 1px solid var(--background-color);
-
+  box-sizing: border-box;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -69,7 +69,14 @@ header {
   margin: -100px 50px 0 0;
 }
 
-section:not(#top) {
+#experience li {
+  list-style: none;
+  border-left: 2px solid var(--primary-color);
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+section:not(#top):not(#contact) {
   padding-top: 40px;
   margin: 0 50px;
   border-bottom: 1px solid var(--primary-color);
@@ -98,6 +105,7 @@ section:not(#top) {
   color: var(--primary-color);
   padding: 3px 10px;
   border-inline: 1px solid var(--primary-color);
+  font-weight: bold;
 }
 
 .subheader::before {
@@ -144,11 +152,6 @@ section:not(#top) {
   position: relative;
   text-align: center;
   top: 40%;
-}
-
-.skill:hover {
-  background-color: white;
-  color: black;
 }
 
 .skill:hover img {
@@ -206,7 +209,7 @@ th {
   transition: 0.5s ease-in-out;
 }
 .skills-toggle:focus {
-  background-color: black;
+  background-color: green;
 }
 
 .slider-nav {
@@ -265,9 +268,11 @@ th {
 
 #projects-board {
   display: flex;
+  justify-content: center;
   margin: 0 auto;
   flex-wrap: wrap;
   width: 1000px;
+  margin-bottom: 20px;
 }
 
 .inline-link {
@@ -360,6 +365,7 @@ textarea {
 
 .mode-label {
   display: none;
+  cursor: pointer;
 }
 
 #darkmode:checked ~ #dark-label {
@@ -373,4 +379,73 @@ textarea {
   text-decoration: underline;
   display: block;
   color: white;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
+}
+
+#menu-icon {
+  display: none;
+  color: white;
+}
+
+#menu {
+  position: absolute;
+  background-color: var(--background-color);
+  border-bottom-right-radius: var(--border-raduis);
+  top: 50px;
+  left: 0;
+  font-size: 20px;
+  width: 200px;
+  border: 1px solid var(--primary-color);
+}
+
+#menu ul {
+  padding: 0;
+  list-style: none;
+}
+
+#menu li {
+  width: 80%;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-raduis);
+  color: var(--primary-color)
+}
+
+#menu li:hover{
+  color: white;
+  background-color: var(--primary-color);
+}
+
+#menu li:hover a{
+  color: white;
+}
+
+#menu a {
+  text-decoration: none;
+  color: var(--primary-color)
+}
+
+#back-to-top{
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 100%;
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  bottom: 20px;
+  right: 20px;
+  /* border: 1px solid white; */
+  /* box-shadow: 1px 1px 4px 1px var(--primary-color); */
 }

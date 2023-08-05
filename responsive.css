@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: none;
   }
 
   .slider-nav {
@@ -20,13 +21,9 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   #nav {
     display: none;
-  }
-
-  header {
-    height: 70px;
   }
 
   #desktop-img {
@@ -34,16 +31,36 @@
   }
 
   .mode-label {
-    padding: 20px;
+    padding: 17px;
   }
 
-  .skill-page{
+  .skill-page {
     display: grid;
     grid-template-columns: auto auto;
   }
-  
+
   #projects-board {
-  display: flex;
-  width: 250px;
+    display: flex;
+    width: 400px;
+  }
+
+  .proj {
+    width: 100%;
+  }
+
+  footer {
+    grid-template-columns: auto;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  #menu-trigger:focus + #menu {
+    display: block !important;
+  }
+
+  #menu:hover {
+    display: block !important;
   }
 }
