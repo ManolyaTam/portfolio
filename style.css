@@ -14,7 +14,6 @@
   --background-color: #212129;
   --font-color: white;
   color: var(--font-color);
-  font-weight: bolder;
 }
 
 body {
@@ -264,9 +263,11 @@ a:focus {
 
 #projects-board {
   display: flex;
+  justify-content: center;
   margin: 0 auto;
   flex-wrap: wrap;
   width: 1000px;
+  margin-bottom: 20px;
 }
 
 .inline-link {
@@ -366,9 +367,11 @@ textarea {
   color: black;
   background-color: transparent;
   text-decoration: underline;
+  margin-right: 20px;
 }
 
 #darkmode:not(:checked) ~ #light-label {
+  margin-right: 20px;
   text-decoration: underline;
   display: block;
   color: white;
