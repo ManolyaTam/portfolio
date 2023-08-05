@@ -46,7 +46,11 @@
   
   #projects-board {
   display: flex;
-  width: 250px;
+  width: 300px;
+  }
+
+  .proj {
+    width: 100%
   }
 
   footer {
