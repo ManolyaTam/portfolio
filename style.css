@@ -1,5 +1,6 @@
 :root {
   scroll-behavior: smooth;
+  overflow-x: hidden;
   --primary-color: #6c65d9;
   --border-raduis: 8px;
   --background-color: #fff;
@@ -81,8 +82,6 @@ header {
 }
 
 section:not(#top):not(#contact) {
-  padding-top: 40px;
-  margin: 0 50px;
   border-bottom: 1px solid var(--primary-color);
 }
 
@@ -287,10 +286,10 @@ input,
 textarea {
   padding: 5px;
   margin: 10px 0;
-  font-size: 16px;
+  font-size: 20px;
 }
 input + label {
-  left: -205px;
+  left: -252px;
 }
 
 textarea {
@@ -330,6 +329,8 @@ section:not(#top) {
   align-items: center;
   justify-content: ceneter;
   flex-direction: column;
+  padding: 40px;
+  margin: 0 50px;
 }
 
 #contact-form {
@@ -362,7 +363,7 @@ textarea {
   padding: 4px 2px;
   border: transparent;
   border-radius: 3px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 #darkmode {
@@ -372,6 +373,7 @@ textarea {
 .mode-label {
   display: none;
   cursor: pointer;
+  padding-right: 15px;
 }
 
 #darkmode:checked ~ #dark-label {
