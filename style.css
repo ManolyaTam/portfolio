@@ -65,6 +65,10 @@ header {
   color: white;
 }
 
+#about {
+  font-size: 20px;
+}
+
 #experience {
   margin: -100px 50px 0 0;
 }
@@ -283,9 +287,10 @@ input,
 textarea {
   padding: 5px;
   margin: 10px 0;
+  font-size: 16px;
 }
 input + label {
-  left: -180px;
+  left: -205px;
 }
 
 textarea {
@@ -357,6 +362,7 @@ textarea {
   padding: 4px 2px;
   border: transparent;
   border-radius: 3px;
+  font-size: 16px;
 }
 
 #darkmode {
