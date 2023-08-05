@@ -417,24 +417,24 @@ footer {
   padding: 5px;
   border: 1px solid var(--primary-color);
   border-radius: var(--border-raduis);
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
-#menu li:hover{
+#menu li:hover {
   color: white;
   background-color: var(--primary-color);
 }
 
-#menu li:hover a{
+#menu li:hover a {
   color: white;
 }
 
 #menu a {
   text-decoration: none;
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
-#back-to-top{
+#back-to-top {
   background-color: var(--primary-color);
   color: white;
   text-decoration: none;
@@ -447,4 +447,20 @@ footer {
   bottom: 20px;
   right: 20px;
   border: 1px solid var(--background-color);
+}
+
+#gallery {
+  max-width: 850px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+#galery img {
+  font-stretch: 10px;
 }
