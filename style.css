@@ -1,4 +1,5 @@
 :root {
+  scroll-behavior: smooth;
   --primary-color: #6c65d9;
   --border-raduis: 8px;
   --background-color: #fff;
