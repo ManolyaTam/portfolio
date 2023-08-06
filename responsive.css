@@ -33,6 +33,10 @@
   body{
     overflow-x: hidden;
   }
+
+  .subheader {
+    font-size: 18px;
+  }
   
   #nav {
     display: none;
