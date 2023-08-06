@@ -1,4 +1,5 @@
 :root {
+  font-family: Ubuntu, -apple-system, Roboto, sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
   --primary-color: #6c65d9;
