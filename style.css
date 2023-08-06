@@ -32,7 +32,7 @@ header {
 
   border-bottom: 1px solid var(--background-color);
   box-sizing: border-box;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
 }
@@ -91,7 +91,7 @@ section:not(#top):not(#contact) {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0;
+  margin-top: 50px;
 }
 
 #top h1 {
@@ -215,7 +215,8 @@ th {
   text-decoration: none;
   transition: 0.5s ease-in-out;
 }
-.skills-toggle a:focus, .skills-toggle a:hover {
+.skills-toggle a:focus,
+.skills-toggle a:hover {
   background-color: grey;
   transition: 0.5s ease-in-out;
 }
@@ -290,16 +291,24 @@ input,
 textarea {
   padding: 5px;
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 14px;
+  max-width: 100%;
+  border-radius: 3px;
+  border: 1px solid lightgrey;
 }
+
 input + label {
-  left: -252px;
+  left: -180px;
 }
 
 textarea {
   width: 300px;
   height: 150px;
   resize: none;
+}
+
+::placeholder {
+  color: white;
 }
 
 textarea + label {
@@ -331,7 +340,7 @@ label {
 section:not(#top) {
   display: flex;
   align-items: center;
-  justify-content: ceneter;
+  justify-content: center;
   flex-direction: column;
   padding: 40px;
   margin: 0 50px;
@@ -354,12 +363,6 @@ section:not(#top) {
   width: 90%;
 }
 
-input,
-textarea {
-  border-radius: 3px;
-  border: 1px solid lightgrey;
-}
-
 #contact-form button {
   width: 80%;
   background-color: var(--primary-color);
@@ -367,7 +370,8 @@ textarea {
   padding: 4px 2px;
   border: transparent;
   border-radius: 3px;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 #darkmode {
@@ -416,6 +420,15 @@ footer {
   font-size: 20px;
   width: 200px;
   border: 1px solid var(--primary-color);
+}
+
+#menu-trigger {
+  position: absolute;
+  top: 7px0;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  border: none;
 }
 
 #menu ul {
