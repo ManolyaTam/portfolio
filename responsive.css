@@ -53,11 +53,10 @@
 
   #projects-board {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 400px;
-  }
-
-  .proj {
-    width: 100%;
+    margin: 0;
   }
 
   footer {
