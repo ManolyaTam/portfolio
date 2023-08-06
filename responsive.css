@@ -1,5 +1,5 @@
 @media (max-width: 1400px) {
-  body{
+  body {
     overflow-x: hidden;
   }
 
@@ -27,17 +27,19 @@
   #gallery {
     width: 70vw;
   }
+
+  
 }
 
 @media (max-width: 800px) {
-  body{
+  body {
     overflow-x: hidden;
   }
 
   .subheader {
-    font-size: 18px;
+    font-size: 16px;
   }
-  
+
   #nav {
     display: none;
   }
@@ -83,12 +85,31 @@
   }
 
   #gallery {
-    width: 80vw
+    width: 80vw;
   }
 
   #about p {
     padding: 0;
     width: 80vw;
+    font-size: 16px;
   }
 
+  #experience li {
+    text-align: center;
+    border-left: none;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-raduis);
+    padding-bottom: 10px;
+    max-width: 370px;
+  }
+
+  input + label {
+    display: none;
+  }
+
+  input:focus + label,
+  input:not(:placeholder-shown) + label {
+    top: -55px;
+    background-color: white;
+  }
 }
