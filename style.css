@@ -32,7 +32,7 @@ header {
 
   border-bottom: 1px solid var(--background-color);
   box-sizing: border-box;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
 }
@@ -91,7 +91,7 @@ section:not(#top):not(#contact) {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0;
+  margin-top: 50px;
 }
 
 #top h1 {
