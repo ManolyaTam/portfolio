@@ -25,7 +25,7 @@
   }
 
   #gallery {
-    width: 80%;
+    width: 70vw;
   }
 }
 
@@ -80,6 +80,10 @@
 
   #menu:hover {
     display: block !important;
+  }
+
+  #gallery {
+    width: 80vw
   }
 
 }
