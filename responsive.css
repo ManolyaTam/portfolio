@@ -1,4 +1,8 @@
 @media (max-width: 1400px) {
+  body{
+    overflow-x: hidden;
+  }
+
   section#top {
     flex-direction: column;
     padding-top: 20px;
@@ -26,6 +30,14 @@
 }
 
 @media (max-width: 800px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  .subheader {
+    font-size: 18px;
+  }
+  
   #nav {
     display: none;
   }
@@ -45,11 +57,10 @@
 
   #projects-board {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 400px;
-  }
-
-  .proj {
-    width: 100%;
+    margin: 0;
   }
 
   footer {
@@ -70,4 +81,5 @@
   #menu:hover {
     display: block !important;
   }
+
 }
