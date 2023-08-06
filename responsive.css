@@ -1,4 +1,8 @@
 @media (max-width: 1400px) {
+  body{
+    overflow-x: hidden;
+  }
+
   section#top {
     flex-direction: column;
     padding-top: 20px;
@@ -26,6 +30,10 @@
 }
 
 @media (max-width: 800px) {
+  body{
+    overflow-x: hidden;
+  }
+
   #nav {
     display: none;
   }
@@ -70,4 +78,5 @@
   #menu:hover {
     display: block !important;
   }
+
 }
