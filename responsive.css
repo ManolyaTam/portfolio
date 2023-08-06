@@ -26,6 +26,10 @@
 }
 
 @media (max-width: 800px) {
+  body{
+    overflow-x: hidden;
+  }
+  
   #nav {
     display: none;
   }
@@ -70,4 +74,5 @@
   #menu:hover {
     display: block !important;
   }
+
 }
