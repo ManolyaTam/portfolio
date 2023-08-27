@@ -1,6 +1,5 @@
 <div align="center">
     <h4><samp>Hi there!👋 this is Manolya, welcome to my portfolio<samp></h4><br>
-    <img src="./img/cat.webp" width=150 style="border-radius: 10px">
 </div>
 
 - 🔭 I’m a CS student at the ppu in my final year...
